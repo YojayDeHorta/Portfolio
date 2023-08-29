@@ -1,0 +1,30 @@
+
+.navbar{
+    /* background-color: transparent !important;  */
+    border-bottom: 1px solid gray;
+    width: 100%;
+    color: white !important;
+    height: 70px;
+    transition: 0.4s;
+    background-color: #1B242F !important;  
+
+}
+.icon{
+    width: 60px;
+    height: 60px;
+    padding: 5px;
+}
+.Title{
+    font-size: 1.125rem;
+}
+.subtitle{
+    font-size: .90rem;
+}
+.NavButtons{
+    /* background-color: #1ABC9C; */
+    font-size: 12pt;
+    color: white !important;
+}
+.active{
+    color: red !important;
+}
