@@ -2,10 +2,12 @@
 .navbar{
     /* background-color: transparent !important;  */
     border-bottom: 1px solid gray;
-    width: 100%;
     color: white !important;
-    height: 70px;
     transition: 0.4s;
+    background-color: #1B242F !important;  
+    
+}
+#navbarSupportedContent{
     background-color: #1B242F !important;  
 
 }
