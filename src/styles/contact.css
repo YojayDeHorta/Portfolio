@@ -1,5 +1,33 @@
 #contact {
+    display: flex;
+    flex-direction: column;
     align-items: center;
 	justify-content: center;
     padding-top: 9rem;
-  }
+}
+
+#contactForm{
+    width: 50%;
+    margin-bottom: 5rem;
+}
+.form-control{
+    border-left: 0 !important;
+    border-right: 0 !important;
+    border-top: 0 !important;
+    padding-top: 40px !important;
+    display: block;
+    z-index: 2;
+}
+.form-floating label{
+    color: #6c757d;
+    z-index: 1;
+}
+.inputContact{
+    height: 100px !important;
+}
+@media screen and (max-width: 600px){
+    #contactForm{
+        width: 90%;
+        margin-bottom: 5rem;
+    }
+}

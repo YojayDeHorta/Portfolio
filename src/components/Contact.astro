@@ -1,5 +1,5 @@
 ---
-import '../styles/portfolio.css';
+import '../styles/contact.css';
 
 ---
 <div id="contact">
@@ -7,5 +7,37 @@ import '../styles/portfolio.css';
         <h2 >CONTACT ME</h2>
         <i class="bi bi-arrow-bar-down"></i>
     </div>
+    <form id="contactForm" class="needs-validation" novalidate>
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control inputContact" id="username" name="username"  placeholder="Name" required>
+            <label for="username">Name</label>
+            <div class="invalid-feedback">
+                Please write a name.
+            </div>
+        </div>
+        <div class="form-floating mb-3">
+            <input type="email" class="form-control inputContact" id="email" name="email" placeholder="Email" required>
+            <label for="email">Email address</label>
+            <div class="invalid-feedback">
+                Email is not valid
+            </div>
+        </div>
+        <div class="form-floating mb-3">
+            <textarea class="form-control" placeholder="Leave a comment here" name="message" id="message" style="height: 200px" required></textarea>
+            <label for="message">Message</label>
+            <div class="invalid-feedback">
+                A nessage is required
+            </div>
+          </div>
+        <div>
+            <button class="btn btn-success btn-lg" type="submit">Send</button>
+        </div>
+    </form>
 </div>
 
+<script>
+
+    import '../scripts/contact.js'
+    
+
+</script>

@@ -4,11 +4,9 @@ function createStars(){
         divWidth = $div.width(),
         divHeight = $div.height();
     var star = document.createElement('div');
-    console.log(divWidth);
     star.style.top= Math.floor( Math.random() * divHeight )+"px" 
     star.style.left = Math.floor( Math.random() * divWidth ) +"px"
     star.classList.add('star');
-    console.log(star.style.left,star.style.top);
     star.addEventListener("animationend", deleteStar);
     night.appendChild(star);
 }
