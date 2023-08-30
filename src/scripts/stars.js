@@ -19,7 +19,7 @@ function deleteStar(e) {
 
 setInterval(() => {
     createStars()
-}, Math.floor(Math.random() * 2500));
+}, Math.floor(Math.random() * 2000));
 
 // function test() {
 //     var $div = $('#backgroundNight'),

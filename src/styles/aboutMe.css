@@ -1,0 +1,47 @@
+#aboutMe {
+    align-items: center;
+	justify-content: center;
+    padding-top: 9rem;
+  }
+
+@keyframes scroll {
+	0% { transform: translateX(0); }
+	100% { transform: translateX(calc(-250px * 11))}
+}
+
+.slider {
+	height: 125px;
+	margin: auto;
+	overflow:hidden;
+	position: relative;
+	width: auto;
+}
+.logoProg{
+    width: 125px;
+    height: 125px;
+}
+.slide-track {
+    animation: scroll 30s linear infinite;
+    display: flex;
+    width: calc(250px * 22);
+}
+.slide {
+    height: 100px;
+    width: 250px;
+}
+
+.textAbout h2{
+    text-align: center;
+    font-size: 2.25rem;
+    line-height: 2rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+
+}
+.textAbout {
+    text-align: center;
+    font-size: 2.25rem;
+    line-height: 2rem;
+    margin-bottom: 5rem;
+    
+}

@@ -16,13 +16,6 @@
     height: 60px;
     padding: 5px;
 }
-#btnStart:hover .icon::before {
-    transform: rotate(90deg);
-    transition: transform 0.5s;
-}
-#btnStart .icon {
-    transition: all 0.4s ease;
-}
 .Title{
     font-size: 1.125rem;
 }
