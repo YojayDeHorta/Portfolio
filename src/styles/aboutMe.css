@@ -15,6 +15,10 @@
 	overflow:hidden;
 	position: relative;
 	width: auto;
+    .slide {
+        height: 100px;
+        width: 250px;
+    }
 }
 .logoProg{
     width: 125px;
@@ -25,10 +29,7 @@
     display: flex;
     width: calc(250px * 22);
 }
-.slide {
-    height: 100px;
-    width: 250px;
-}
+
 
 .textAbout h2{
     text-align: center;
