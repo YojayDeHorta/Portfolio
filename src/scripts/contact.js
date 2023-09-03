@@ -49,14 +49,14 @@ function toastAviso(mensaje,message, tipo) {
         toastHeader.classList.remove("bg-success")
         toastHeader.classList.add("bg-danger")
         if (localStorage.getItem("lang")=="en") 
-        toastAdvice.innerHTML='<i class="bi bi-exclamation-circle" style="color:red !important"></i>&nbsp;'+message
-        else toastAdvice.innerHTML='<i class="bi bi-exclamation-circle" style="color:red !important"></i>&nbsp;'+mensaje
+        toastAdvice.innerHTML='<i class="bi bi-exclamation-circle" style="color:red !important"></i>&nbsp;'+mensaje
+        else toastAdvice.innerHTML='<i class="bi bi-exclamation-circle" style="color:red !important"></i>&nbsp;'+message
         toast.show()
         return false
     }
     toastHeader.classList.remove("bg-danger")
     toastHeader.classList.add("bg-success")
-    if (localStorage.getItem("lang")=="en") toastAdvice.innerHTML='<i class="bi bi-exclamation-circle" style="color:green !important"></i>&nbsp;'+message
-    else toastAdvice.innerHTML='<i class="bi bi-exclamation-circle" style="color:green !important"></i>&nbsp;'+mensaje
+    if (localStorage.getItem("lang")=="en") toastAdvice.innerHTML='<i class="bi bi-exclamation-circle" style="color:green !important"></i>&nbsp;'+mensaje
+    else toastAdvice.innerHTML='<i class="bi bi-exclamation-circle" style="color:green !important"></i>&nbsp;'+message
     toast.show()
 }

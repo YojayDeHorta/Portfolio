@@ -60,6 +60,12 @@
     font-size: 19px;
     max-width: 500px;
 }
+.textMe div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
 .imgMe{
     width: 200px;
     height: 300px;
@@ -82,4 +88,10 @@
         padding-top: 5rem;
 
     }
+  }
+  .logoAbout{
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    margin-left: 20px;
   }
