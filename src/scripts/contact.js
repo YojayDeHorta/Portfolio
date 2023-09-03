@@ -28,20 +28,19 @@ contactForm.addEventListener("submit", async (e) => {
             })
         });
         const data = await response.json();
+        if (localStorage.getItem("lang")=="en") btnContact.innerHTML="Send"
+        else btnContact.innerHTML="Enviar"
         if (data) {
-            toastAviso("Formulario enviado exitosamente!","Form sent successfully!",true)
-            btnContact.innerHTML="Submitted successfully!"
+            toastAviso("Formulario enviado exitosamente!","Form submitted successfully!",true)
             btnContact.disabled=true
             return true
         }
         toastAviso("error, intentelo de nuevo mas tarde","error, try again later",false)   
-        btnContact.innerHTML="Send"
  
     }
     //aqui ya se agarran las variables y se envian. solo pondre un log con las variables
 });
 // toast.show()
-toastAviso("a","b", true)
 function toastAviso(mensaje,message, tipo) {
     var toastHeader = document.getElementById('toastHeader')
     var toastAdvice = document.getElementById('toastAdvice')
