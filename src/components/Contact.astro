@@ -30,9 +30,23 @@ import '../styles/contact.css';
             </div>
           </div>
         <div>
-            <button class="btn btn-success btn-lg" type="submit">Send</button>
+            <button class="btn btn-success btn-lg" type="submit" id="btnContact">Send</button>
         </div>
     </form>
+    <!--VENTANA TOAST PARA AVISOS-->
+    <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11;">
+        <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header bg-danger" id="toastHeader">
+                <img src="/logo.svg" class="rounded me-2" width="10%" alt="...">
+                <strong class="me-auto text-white">Contact</strong>
+                <small class='text-white'>Notifications</small>
+                <button type="button" class="btn-close text-white" data-bs-dismiss="toast" aria-label="Close" style='color:white !important;background-color: white !important;'></button>
+            </div>
+            <div class="toast-body bg-white" id="toastAdvice">
+                <i class="bi bi-exclamation-circle" style='color:red !important'></i>&nbsp;Por favor llena todos los campos del formulario
+            </div>
+        </div>
+    </div>
 </div>
 
 <script>

@@ -1,16 +1,66 @@
 ---
 import '../styles/portfolio.css';
 let projects=[
-    {
-        id:1,
-        name:'Hotel',
-        subtitle:'',
-        photo1:'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0f/ba/29/5c/img-worlds-of-adventure.jpg?w=1200&amp;h=1200&amp;s=1',
-        tech:'javascript',
-        desc:'is a hotel',
-        github:'asd.com',
-        page:''
-    },
+  {
+      id:1,
+      name:'Unit Converter',
+      subtitle:'unit conversion application',
+      photo1:'/projects/unit1.webp',
+      photo2:'/projects/unit2.webp',
+      photo3:'/projects/unit4.webp',
+      tech:'AstroJS / NestJS',
+      desc:'created using Astrojs and Nestjs, the units available to convert are: length, speed, time and currency exchange',
+      github:'https://github.com/YojayDeHorta/equivalenciasApp',
+      page:'https://equivalencies.onrender.com'
+  },
+  {
+      id:2,
+      name:'Hotel casa barlovento',
+      subtitle:'hotel website',
+      photo1:'/projects/barlovento1.webp',
+      photo2:'/projects/barlovento2.webp',
+      photo3:'/projects/barlovento3.webp',
+      tech:'VueJS / NodeJS',
+      desc:'Web application created using Vue.js, vuetify and Node.js with database in Firebase Multilanguage project destined for an important hotel in Colombia with CRUD of administrator where the loading and uploading of data is handled.',
+      github:'',
+      page:'https://www.hotelcasabarlovento.com/'
+  },
+  {
+    id:3,
+    name:'Hotel nacional',
+    subtitle:'hotel website template',
+    photo1:'/projects/nacional1.webp',
+    photo2:'/projects/nacional2.webp',
+    photo3:'/projects/nacional5.webp',
+    tech:'VueJS / NodeJS',
+    desc:'Web application created using Vue.js, vuetify and Node.js with database in mongoDB Multilanguage template based on an important hotel located in Spain, created from scratch with main page, administrator CRUD and reservation system.',
+    github:'https://github.com/YojayDeHorta/Hotel-nacional-completo',
+    page:'https://hotelnacional.netlify.app/'
+  },
+  {
+    id:4,
+    name:'Pinky store',
+    subtitle:'store website',
+    photo1:'/projects/pinkystore1.webp',
+    photo2:'/projects/pinkystore2.webp',
+    photo3:'/projects/pinkystore3.webp',
+    tech:'Bootstrap / PHP',
+    desc:'Web page created with Bootstrap and php with a Mysql database simulating a website to buy fruits where there is a login for users and a customer management system in addition to the products for sale for administrators',
+    github:'',
+    page:'http://pinkystore.rf.gd/'
+  },
+  {
+    id:5,
+    name:'HapFit',
+    subtitle:'fitness app',
+    photo1:'/projects/hapfit1.webp',
+    photo2:'/projects/hapfit2.webp',
+    photo3:'/projects/hapfit3.webp',
+    tech:'Vuejs / Electron / Nodejs',
+    desc:'Mobile application created using Vue.js, electron, Node.js with Mysql database, file upload with cloudinary and stripe payment gateway. Project for a chain of gyms where the goal is to keep customers in touch, offer exclusive services and plans, upload plans and help routines for new ones, and make new friends. This website is a demo of an Android app made specifically for the size of a phone, you can view the app here:',
+    github:'https://github.com/YojayDeHorta/HapFit',
+    page:'https://hap-fit.vercel.app'
+  },
 ];
 ---
 <div id="portfolio">
@@ -21,21 +71,20 @@ let projects=[
     <div class="containerProjects">
     
         {projects.map((project) => 
-        <div class="card  text-black m-5 ">
+        <div class="card  text-black ">
             <img class="card-img" src={project.photo1}/>
             <div class="card-img-overlay">
                 <d class="card-title">{project.name}</d>
                 <p class="card-text mb-5">{project.tech}</p>
-                <button class="btn btn-outline-success" id="btnPortfolio" value={project.id}>LEARN MORE</button>
+                <button class="btn btn-outline-success buttonModal" value={project.id}>LEARN MORE</button>
             </div>
         </div>
         )}
 
       </div>
-
       <!-- modal portfolio -->
       <div class="modal fade " id="modal"  aria-labelledby="modalLabel" aria-hidden="true">
-        <div class="modal-dialog  modal-fullscreen-sm-down" >
+        <div class="modal-dialog modal-dialog-centered modal-fullscreen-sm-down" >
           <div class="modal-content ">
             <div class="modal-header">
                 <div id="carousel" class="carousel slide " data-bs-ride="carousel" >
@@ -75,9 +124,9 @@ let projects=[
               <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem totam nisi pariatur eos quibusdam laudantium, </p>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Visit Github <i class="bi bi-github"></i></button>
+              <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Visit Github <i class="bi bi-github"></i></button>
               <button type="button" class="btn btn-success  me-auto">Web page <i class="bi bi-box-arrow-up-right"></i></button>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
 
             </div>
           </div>

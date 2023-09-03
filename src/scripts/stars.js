@@ -1,14 +1,17 @@
 let night= document.getElementById("night")
 function createStars(){
-    var $div = $('#backgroundNight'),
-        divWidth = $div.width(),
-        divHeight = $div.height();
+    var div = document.getElementById("backgroundNight") 
+    var positionInfo = div.getBoundingClientRect(),
+
+        divWidth = positionInfo.width,
+        divHeight = positionInfo.height;
     var star = document.createElement('div');
     star.style.top= Math.floor( Math.random() * divHeight )+"px" 
     star.style.left = Math.floor( Math.random() * divWidth ) +"px"
     star.classList.add('star');
     star.addEventListener("animationend", deleteStar);
     night.appendChild(star);
+    // console.log(divWidth,divHeight);
 }
 
 function deleteStar(e) {

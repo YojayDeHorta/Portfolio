@@ -1,12 +1,13 @@
 #aboutMe {
     align-items: center;
 	justify-content: center;
-    padding-top: 9rem;
-  }
+    padding-top: 4rem;
+
+}
 
 @keyframes scroll {
 	0% { transform: translateX(0); }
-	100% { transform: translateX(calc(-250px * 11))}
+	100% { transform: translateX(calc(-200px * 11))}
 }
 
 .slider {
@@ -17,17 +18,17 @@
 	width: auto;
     .slide {
         height: 100px;
-        width: 250px;
+        width: 200px;
     }
 }
 .logoProg{
-    width: 125px;
-    height: 125px;
+    width: 80px;
+    height: 80px;
 }
 .slide-track {
     animation: scroll 30s linear infinite;
     display: flex;
-    width: calc(250px * 22);
+    width: calc(200px * 22);
 }
 
 
@@ -44,5 +45,41 @@
     font-size: 2.25rem;
     line-height: 2rem;
     margin-bottom: 3rem;
+    height: 10vh;
     
 }
+.AboutmeText{
+    height: 60vh;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    
+}
+.textMe{
+    text-align: center;
+    font-size: 19px;
+    max-width: 500px;
+}
+.imgMe{
+    width: 200px;
+    height: 300px;
+    /* margin-right: 50px; */
+}
+@media only screen and (max-width: 800px) {
+    .AboutmeText{
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .textMe{
+        text-align: center;
+        font-size: 18px;
+        margin: 20px;
+    }
+    #aboutMe, #portfolio{
+        padding-top: 5rem;
+
+    }
+  }

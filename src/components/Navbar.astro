@@ -3,15 +3,15 @@ import '../styles/navbar.css';
 
 ---
 
-<nav id="navbar" class="navbar sticky-top navbar-expand-lg bg-body-tertiary bg-dark d-flex flex-row"  data-bs-theme="dark">
+<nav id="navbar" class="navbar sticky-top navbar-expand-md bg-body-tertiary bg-dark d-flex flex-row"  data-bs-theme="dark">
      <div class="d-flex ">
-        <a href="#night"> <img class="icon" src="/y-obscura.png" alt=""></a>
-       
+        <a href="#night"> <img class="icon" src="/logo.svg" alt=""></a>
+
         <div class="d-flex flex-column ms-1 mt-1 p-1">
             <h1 class="Title m-0 text-nowrap">Yojay De Horta</h1>
             <h2 class="subtitle text-nowrap">Desarrollador Fullstack</h2>
         </div>
-    </div> 
+    </div>
         <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
         </button>
@@ -26,18 +26,18 @@ import '../styles/navbar.css';
             <li class="nav-item NavButtons">
             <a class="nav-link text-light" href="#portfolio">PORTFOLIO</a>
             </li>
-            
+
             <li class="nav-item NavButtons">
             <a class="nav-link text-light" href="#contact">CONTACT</a>
             </li>
-            
+
         </ul>
         </div>
 </nav>
 <script>
     // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
     /*window.onscroll = function() {scrollFunction()};
-    
+
     function scrollFunction() {
       if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
         document.getElementById("navbar").style.padding = "30px 10px";
