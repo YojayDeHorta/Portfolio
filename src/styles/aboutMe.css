@@ -58,7 +58,7 @@
 .textMe{
     text-align: center;
     font-size: 19px;
-    max-width: 500px;
+    max-width: 480px;
 }
 .textMe div{
     display: flex;

@@ -81,13 +81,13 @@ buttonsModal.forEach((button) => {
     // console.log(obj, button.value);
     carouselimg.innerHTML = `
     <div class="carousel-item active">
-      <img class="imgProjects" src="${obj.photo1}" alt="Demo 1" class="d-block" >
+      <img class="imgProjects" src="${obj.photo1}" alt="${obj.photo1}" class="d-block" >
     </div>
     <div class="carousel-item ">
-      <img class="imgProjects" src="${obj.photo2}" alt="Demo 2" class="d-block" >
+      <img class="imgProjects" src="${obj.photo2}" alt="${obj.photo2}" class="d-block" >
     </div>
     <div class="carousel-item ">
-      <img class="imgProjects" src="${obj.photo3}" alt="Demo 3" class="d-block" >
+      <img class="imgProjects" src="${obj.photo3}" alt="${obj.photo3}" class="d-block" >
     </div>
     `
     modalbody.innerHTML = `
