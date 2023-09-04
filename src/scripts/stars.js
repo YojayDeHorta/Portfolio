@@ -12,6 +12,8 @@ function createStars(){
     star.addEventListener("animationend", deleteStar);
     night.appendChild(star);
     // console.log(divWidth,divHeight);
+    // console.log(night.childElementCount);
+
 }
 
 function deleteStar(e) {
@@ -19,7 +21,10 @@ function deleteStar(e) {
 }
 
 setInterval(() => {
-    createStars()
+    if (night.childElementCount<5) 
+        createStars()
+
+    
 }, Math.floor(Math.random() * 2000));
 
 // function test() {

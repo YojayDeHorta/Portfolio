@@ -1,5 +1,5 @@
 let contactForm = document.getElementById("contactForm");
-let url="http://localhost:3500"
+let url=""
 var toastventana = document.getElementById('liveToast')
 var btnContact = document.getElementById('btnContact')
 var toast = new bootstrap.Toast(toastventana)

@@ -78,7 +78,7 @@ buttonsModal.forEach((button) => {
   button.addEventListener('click', () => {
     let obj = projects.find(o => o.id == button.value);
 
-    console.log(obj, button.value);
+    // console.log(obj, button.value);
     carouselimg.innerHTML = `
     <div class="carousel-item active">
       <img class="imgProjects" src="${obj.photo1}" alt="Demo 1" class="d-block" >
@@ -98,12 +98,12 @@ buttonsModal.forEach((button) => {
     modalfooter.innerHTML = ""
     if (obj.github != '') {
       modalfooter.innerHTML = `
-      <a type="button" class="btn btn-secondary" href="${obj.github}">Visit Github <i class="bi bi-github"></i></a>
+      <a target="_blank" class="btn btn-secondary" href="${obj.github}">Visit Github <i class="bi bi-github"></i></a>
       `
     }
     if (obj.page != '') {
       modalfooter.innerHTML += `
-        <a type="button" href="${obj.page}"  class="btn btn-success  me-auto">Web page <i class="bi bi-box-arrow-up-right"></i></a>
+        <a target="_blank"   href="${obj.page}"  class="btn btn-success  me-auto">Web page <i class="bi bi-box-arrow-up-right"></i></a>
       `
     }
     modalfooter.innerHTML += `
