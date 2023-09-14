@@ -16,10 +16,11 @@
 	overflow:hidden;
 	position: relative;
 	width: auto;
-    .slide {
-        height: 100px;
-        width: 200px;
-    }
+
+}
+.slider .slide {
+    height: 100px;
+    width: 200px;
 }
 .logoProg{
     width: 80px;
