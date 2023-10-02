@@ -32,8 +32,8 @@ let projects = [
     photo3:'/projects/anime3.webp',
     tech:'ReactJS / MaterialUI ',
     desc:'Website for anime information with filters, search and user reviews. Created with ReactJS and MaterialUI using jikan API.',
-    github:'https://github.com/YojayDeHorta/Anime-list-react',
-    page:'animelistproject.netlify.app'
+    github:'https://https://github.com/YojayDeHorta/Anime-list-react',
+    page:'https://animelistproject.netlify.app'
   },
   {
       id:3,
