@@ -7,9 +7,9 @@ let projects = [
     photo2:'/projects/terraria2.webp',
     photo3:'/projects/terraria3.webp',
     tech:'ReactJS / .NET Core',
-    desc:'Created with ReactJS and using .Net Core with authentication service. Sql server and firebase Storage were used to save npc info with image.',
+    desc:'Created with ReactJS and .Net Core with authentication service. SQL Azure and firebase Storage were used to save npc info with image.',
     github:'https://github.com/YojayDeHorta/Terraria-Npcs-Api',
-    page:'http://pinkyterraria-001-site1.atempurl.com'
+    page:'https://terrarianpcs.azurewebsites.net'
 },
   
   {
